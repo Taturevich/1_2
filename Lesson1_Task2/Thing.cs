@@ -36,7 +36,7 @@ namespace Lesson1_Task2
         /// <returns></returns>
         public double GetMass()
         {
-            return volume * material.Density;
+            return volume * material.density;
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace Lesson1_Task2
         /// <returns></returns>
         public override string ToString()
         {
-            return name+";"+material.Name+";"+material.Density+";"+volume+";"+GetMass()+";";
+            return name+";"+material.name+";"+material.density+";"+volume+";"+GetMass()+";";
         }
 
         public string Name

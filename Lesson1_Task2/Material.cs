@@ -8,8 +8,8 @@ namespace Lesson1_Task2
 {
     class Material
     {
-        public readonly string name; // название материала
-        public readonly int density; // плотность материала
+        readonly string name; // название материала
+        readonly int density; // плотность материала
 
         /// <summary>
         /// Конструктор без параметров
@@ -40,5 +40,14 @@ namespace Lesson1_Task2
             return name+";"+density+";\n";
         }
 
+        public string GetName
+        {
+            get{return name;}
+        }
+
+        public double GetDensity
+        {
+            get { return density; }
+        }
     }
 }
